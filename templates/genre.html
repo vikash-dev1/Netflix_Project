@@ -193,7 +193,7 @@
             var movieID = modal.querySelector('.modal-content a').href;
             console.log(movieID)
             $.ajax({
-                url: "{% url 'app:add_to_list' %}",
+                url: "{% url 'app1:add_to_list' %}",
                 type: "POST",
                 data: {
                     movie_id: movieID,
